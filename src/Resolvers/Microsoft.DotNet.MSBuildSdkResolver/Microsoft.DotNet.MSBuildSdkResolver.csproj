@@ -65,6 +65,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Build.Framework" Version="$(MicrosoftBuildPackageVersion)" PrivateAssets="All" />
     <PackageReference Include="Microsoft.NETCore.DotNetHostResolver" Version="$(MicrosoftNETCoreDotNetHostResolverPackageVersion)" PrivateAssets="All" />
+    <PackageReference Include="runtime.win-arm64.Microsoft.NETCore.DotNetHostResolver" Version="$(MicrosoftNETCoreDotNetHostResolverPackageVersion)" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Deployment.DotNet.Releases" Version="$(MicrosoftDeploymentDotNetReleasesVersion)" />
   </ItemGroup>
 
