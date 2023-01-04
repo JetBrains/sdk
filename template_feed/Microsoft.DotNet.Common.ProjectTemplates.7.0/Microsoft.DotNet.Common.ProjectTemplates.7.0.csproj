@@ -5,6 +5,7 @@
         <IncludeSource>False</IncludeSource>
         <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
         <OutputPath>$(ArtifactsTmpDir)</OutputPath>
+        <EnableSourceLink>false</EnableSourceLink>
         <EnableDefaultItems>False</EnableDefaultItems>
         <UsingToolTemplateLocalizer>true</UsingToolTemplateLocalizer>
         <IsPackable>true</IsPackable>

@@ -10,6 +10,7 @@
         <IsPackable>true</IsPackable>
         <IsShipping>true</IsShipping>
         <IsShippingPackage>true</IsShippingPackage>
+        <EnableSourceLink>false</EnableSourceLink>
         <NoWarn>$(NoWarn);2008;NU5105</NoWarn>
         <NoPackageAnalysis>true</NoPackageAnalysis>
         <PackageId>Microsoft.DotNet.Common.ItemTemplates</PackageId>
