@@ -11,6 +11,7 @@
     <DefineConstants>$(DefineConstants);WCWIDTH_VISIBILITY_INTERNAL</DefineConstants>
     <StrongNameKeyId>MicrosoftAspNetCore</StrongNameKeyId>
     <SignAssembly>true</SignAssembly>
+    <NoWarn>IDE0055</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +26,7 @@
     <ProjectReference Include="../Microsoft.DotNet.Cli.Utils/Microsoft.DotNet.Cli.Utils.csproj" />
     <ProjectReference Include="../Microsoft.DotNet.Configurer/Microsoft.DotNet.Configurer.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <Compile Update="Commands\HelpStrings.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -66,6 +67,6 @@
     <Copy SourceFiles="@(WcwidthFiles)" DestinationFolder="$(BaseIntermediateOutputPath)/External/%(RecursiveDir)" />
     <ItemGroup>
       <Compile Include="$(BaseIntermediateOutputPath)/External/**/*.cs" />
-    </ItemGroup> 
+    </ItemGroup>
   </Target>
 </Project>
