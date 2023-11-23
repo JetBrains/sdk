@@ -65,6 +65,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Build.Framework" PrivateAssets="All" />
     <PackageReference Include="Microsoft.NETCore.DotNetHostResolver" PrivateAssets="All" />
+    <PackageReference Include="runtime.win-arm64.Microsoft.NETCore.DotNetHostResolver" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Deployment.DotNet.Releases" />
   </ItemGroup>
 
