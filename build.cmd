@@ -10,5 +10,7 @@ if %errorlevel%==0 (
     set skipFlags="/p:SkipUsingCrossgen=true /p:SkipBuildingInstallers=true"
 )
 set DOTNET_SYSTEM_NET_SECURITY_NOREVOCATIONCHECKBYDEFAULT=true
-powershell -NoLogo -NoProfile -ExecutionPolicy ByPass -command "& """%~dp0eng\common\build.ps1""" -restore -build -msbuildEngine dotnet %skipFlags% /tlp:summary %*"
+rem Hardcode default build to exclude test projects by building the source-build solution filter.
+rem Users can still override by passing their own -projects argument after this default.
+powershell -NoLogo -NoProfile -ExecutionPolicy ByPass -command "& """%~dp0eng\common\build.ps1""" -restore -build -projects """source-build.slnf""" -msbuildEngine dotnet %skipFlags% /tlp:summary %*"
 exit /b %ErrorLevel%
